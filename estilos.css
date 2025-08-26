@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -----------FONT FACE--------------- */
+
+@font-face {
+    font-family: "Helvetica Regular";
+    src: url(fonts/Helvetica.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Bold";
+    src: url(fonts/Helvetica-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ------------HEADER----------------- */
+
+
+h1 {
+    font-family: "Helvetica Bold";
+    font-size: 84px;
+    color: #1E1E1E;
+}
+
+header a {
+    font-family: "Helvetica Bold";
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+header a span{
+    color: #E0508F;
+}
+
+header a:hover {
+    color: #E0508F;
+}
+
+header a span :hover {
+    color: #1E1E1E;
+}
+
+p {
+    font-family: "Helvetica Regular";
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+/* ----------------MAIN------------------- */
+
+/* SOBRE MI */
+
+#info-personal span{
+    font-family: "Helvetica Bold";
+    font-weight: bold;
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+#info-personal {
+    font-family: "Helvetica Regular";
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+/* EXPERIENCIA */
+
+#experiencia span{
+    font-family: "Helvetica Bold";
+    font-weight: bold;
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+#experiencia {
+    font-family: "Helvetica Regular";
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+/* EDUCACION */
+
+#educacion span{
+    font-family: "Helvetica Bold";
+    font-weight: bold;
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+#educacion {
+    font-family: "Helvetica Regular";
+    font-size: 16px;
+    color: #1E1E1E;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    font-family: "Helvetica Bold";
+    color: antiquewhite;
+
+    width: 1366px;
+    height: 226px;
+    background-color: #1E1E1E;
+}
+
+.habilidades h1{
+    color: antiquewhite;
+}
+
+.habilidades ul{ 
+    font-family: "Helvetica Bold";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* GALERIA */
+
+
+/* -------------------FOOTER----------------- */
+
+footer {
+    font-family: "Helvetica Bold";
+    font-weight: bold;
+}
+
+footer a{
+    font-size: 20px;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: antiquewhite;
+}
+
+footer h1{
+    font-size: 84px;
+    color: #1E1E1E;
+}
+
+.footer {
+    width: 1366px;
+    height: 125px;
+    background-color: #E0508F;
+}
+
