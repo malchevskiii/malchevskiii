@@ -17,6 +17,15 @@
     font-style: normal;
 }
 
+body {
+    background-color: rgb(245, 253, 252);
+}
+
+*{
+    text-align: center;
+    list-style: none;
+}
+
 /* ------------HEADER----------------- */
 
 
@@ -24,6 +33,8 @@ h1 {
     font-family: "Helvetica Bold";
     font-size: 84px;
     color: #1E1E1E;
+    text-align: center;
+    line-height: 15px;
 }
 
 header a {
@@ -34,7 +45,7 @@ header a {
     text-decoration: none;
 }
 
-header a span{
+header a span {
     color: #E0508F;
 }
 
@@ -56,7 +67,7 @@ p {
 
 /* SOBRE MI */
 
-#info-personal span{
+#info-personal span {
     font-family: "Helvetica Bold";
     font-weight: bold;
     font-size: 16px;
@@ -71,7 +82,7 @@ p {
 
 /* EXPERIENCIA */
 
-#experiencia span{
+#experiencia span {
     font-family: "Helvetica Bold";
     font-weight: bold;
     font-size: 16px;
@@ -86,7 +97,7 @@ p {
 
 /* EDUCACION */
 
-#educacion span{
+#educacion span {
     font-family: "Helvetica Bold";
     font-weight: bold;
     font-size: 16px;
@@ -103,18 +114,18 @@ p {
 
 .habilidades {
     font-family: "Helvetica Bold";
-    color: antiquewhite;
+    color: rgb(245, 253, 252);
 
-    width: 1366px;
+    /* width: 1366px;*/
     height: 226px;
     background-color: #1E1E1E;
 }
 
-.habilidades h1{
-    color: antiquewhite;
+.habilidades h1 {
+    color: rgb(245, 253, 252);
 }
 
-.habilidades ul{ 
+.habilidades ul {
     font-family: "Helvetica Bold";
     font-weight: bold;
     font-size: 20px;
@@ -130,24 +141,23 @@ footer {
     font-weight: bold;
 }
 
-footer a{
+footer a {
     font-size: 20px;
     color: #1E1E1E;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: antiquewhite;
+    color: rgb(245, 253, 252);
 }
 
-footer h1{
+footer h1 {
     font-size: 84px;
     color: #1E1E1E;
 }
 
 .footer {
-    width: 1366px;
+/*    width: 1366px; */
     height: 125px;
     background-color: #E0508F;
 }
-
