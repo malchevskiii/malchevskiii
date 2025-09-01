@@ -5,111 +5,128 @@
     <meta charset="utf-8" />
     <title>Martina Malchevski ˚ʚ♡ɞ˚</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Martina Malchevski.</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href= "#" >Sobre mi</a>
-            <a href="#">Experiencia</a>
-            <a href="">Educaci&oacute;n</a>
-            <a href="#">Habilidades</a>
-            <a href="#">:P</a>
-            <a href="#">Contacto</a>
+    <header class="header">
+        <img src="img/mm.png" alt="Martina Malchevski Title" />
+        <nav class="menu">
+            <a href="#header">Inicio</a>
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#educacion">Educaci&oacute;n</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#galeria">:P</a>
+            <a href="#Contacto">Contacto</a>
         </nav>
     </header>
 
+    <!---MAIN--->
     <main>
-        <section id="sobre-mi">
-            <article>
-                <h1>Sobre mi</h1>
-                <p>Dise&ntilde;adora gr&aacute;fica con formaci&oacute;n en comunicaci&oacute;n visual y un inter&eacute;s especial en lo editorial y
-                    experimental.<br> Me apasiona trabajar con tipograf&iacute;a, estructura y elementos anal&oacute;gicos.</p>
-            </article>
-            <!--Info personal, el <br> se puede usar en este caso??-->
-            <div id="info-personal">
-                <ul>
-                    <li><span>Cumplea&ntilde;os</span><br>18/6/2001</li>
-                    <li><span>Tel&eacute;fono</span><br>1139382306</li>
-                    <li><span>Edad</span><br>24 a&ntilde;os</li>
-                    <li><span>Signo</span><br>G&eacute;minis ˊᵕˋ</li>
-                    <li><span>Comida fav</span><br>Esp&eacute;rrago</li>
-                    <li><span>Localidad</span><br>Adrogu&eacute;</li>
-                </ul>
-            </div>
-            <div id="imgs-personales">
-                <img src="img/image 4.jpg" alt="Martina Malchevski" height="440px" width="353px" />
-                <img src="img/image 5.jpg" alt="Bosque" height="119px" width="507px" />
-                <img src="img/image 11.jpg" alt="Martina pero de chica" height="154px" width="124px" />
-                <p>*siempre se puede robar con una foto de chico</p>
+
+        <!------SOBRE MI------------->
+        <section id="sobre-mi" class="sobre-mi">
+
+            <!--Columna izquierda-->
+            <div class="sobre-mi-contenedor">
+                <div class="columna-izquierda">
+                    <img class="img1" src="img/image 4.jpg" alt="Martina Malchevski" height="440px" width="353px" />
+                </div>
+
+                <!--Columna derecha-->
+                <div class="columna-derecha">
+                    <article class="texto">
+                        <h1>Sobre mi</h1>
+                        <p>Dise&ntilde;adora gr&aacute;fica con formaci&oacute;n en comunicaci&oacute;n visual y<br>
+                            un inter&eacute;s especial en lo editorial y experimental. Me apasiona<br>
+                            trabajar con tipograf&iacute;a, estructura y elementos anal&oacute;gicos.</p>
+                    </article>
+                    <div class="info-personal">
+                        <ul>
+                            <li><span>Cumplea&ntilde;os</span><br>18/6/2001</li>
+                            <li><span>Tel&eacute;fono</span><br>1139382306</li>
+                            <li><span>Edad</span><br>24 a&ntilde;os</li>
+                            <li><span>Signo</span><br>G&eacute;minis ˊᵕˋ</li>
+                            <li><span>N&uacute;mero fav</span><br>17</li>
+                            <li><span>Localidad</span><br>Adrogu&eacute;</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <!--seccion EXPERIENCIA-->
-        <section>
-            <h1>Experiencia</h1>
-            <div id="experiencia">
-                <ul>
+
+
+        <!--EXPERIENCIA y EDUCACION-->
+        <section class="seccion-dos-columnas">
+
+            <!---Columna izquierda-->
+            <div id="experiencia" class="columna-experiencia">
+                <h2>Experiencia</h2>
+                <ul class="listado">
                     <li><span>Mambo Clothing</span><br>Dise&ntilde;adora gráfica<br>2019-2022</li>
                     <li><span>Premoldeados de Lobos</span><br>Encargada y Community Manager<br>2023-2025</li>
                     <li><span>CW Seguros</span><br>Dise&ntilde;adora gráfica<br>2019-Act.</li>
                     <li><span>Freelancer</span><br>Dise&ntilde;adora gráfica<br>2019-Act.</li>
                 </ul>
             </div>
-        </section>
-        <!--seccion EDUCACION-->
-        <section>
-            <h1>Educaci&oacute;n</h1>
-            <div id="educacion">
-                <ul>
+
+            <!--Columna derecha-->
+            <div id="educacion" class="columna-educacion">
+                <h2>Educaci&oacute;n</h2>
+                <ul class="listado">
                     <li><span>Universidad Nacional de Lan&uacute;s</span><br>Lic. en Dise&ntilde;o y Comunicaci&oacute;n
                         Visual<br>2019-Act.</li>
-                    <li><span>Nuestra Se&ntilde;ora de Luj&aacute;n</span><br>Bachillerato en Econom&iacute;a<br>2012-2018</li>
-                </ul>
-            </div>
-        </section>
-        <!--SE PUEDE PONER CLASS EN UNA SECTION?-->
-        <section class="habilidades">
-            <div id="habilidades">
-                <h1>Habilidades</h1>
-                <!--Puedo seguir abusando de las listas? lol-->
-                <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>InDesign</li>
-                    <li>AfterEffects</li>
-                    <li>Office</li>
+                    <li><span>Nuestra Se&ntilde;ora de Luj&aacute;n</span><br>Bachillerato en
+                        Econom&iacute;a<br>2012-2018</li>
                 </ul>
             </div>
         </section>
 
-        <section>
-            <div id="galeria">
-                <img src="img/Rectangle 2.jpg" alt="galeria1" height="302px" width="302px" />
-                <img src="img/Rectangle 3.jpg" alt="galeria2" height="302px" width="302px" />
-                <img src="img/Rectangle 4.jpg" alt="galeria3" height="302px" width="302px" />
+
+        <!---HABILIDADES-->
+        <section id="habilidades" class="habilidades">
+            <h1>Habilidades</h1>
+            <ul class="skills">
+                <li>Photoshop<img src="img/ph.png" alt="Photoshop" height="42px" width="42px" /></li>
+                <li>Illustrator<img src="img/ai.png" alt="Photoshop" height="42px" width="42px" /></li>
+                <li>InDesign<img src="img/id.png" alt="Photoshop" height="42px" width="42px" /></li>
+                <li>AfterEffects<img src="img/ae.png" alt="Photoshop" height="42px" width="42px" /></li>
+                <li>Office<img src="img/off.png" alt="Photoshop" height="42px" width="42px" /></li>
+            </ul>
+        </section>
+
+
+        <!----GALERIA-->
+        <section id="galeria" class="galeria">
+            <div class="img-galeria">
+                <a href="https://malchevskiii.myportfolio.com/bjork-post-1995-tour-experimental-design"><img
+                        src="img/Rectangle 2.jpg" alt="galeria1" height="302px" width="302px" /></a>
+                <a href="https://malchevskiii.myportfolio.com/calendario-2025"><img src="img/Rectangle 3.jpg"
+                        alt="galeria2" height="302px" width="302px" /></a>
+                <a href="https://malchevskiii.myportfolio.com/slow-brewing-cofee-branding"><img
+                        src="img/Rectangle 4.jpg" alt="galeria3" height="302px" width="302px" /></a>
             </div>
         </section>
+
     </main>
-    <footer>
-        <h1>Gracias x ver! ♡</h1>
-        <ul class="footer">
-            <li>
-                <a href="https://www.instagram.com/malchevskiii/">Instagram</a>
+
+
+    <!--FOOTER-->
+    <footer id="Contacto" class="footer">
+        <img src="img/gracias.png" alt="Gracias" height="194px" width="628px" />
+        <ul class="footer-links">
+            <li><a href="https://www.instagram.com/malchevskiii/">Instagram</a>
             </li>
-            <li>
-                <a href="https://www.behance.net/malchevskiii">Behance</a>
+            <li><a href="https://www.behance.net/malchevskiii">Behance</a>
             </li>
-            <li>
-                <a href="mailto:malchevskiii@gmail.com">Mail</a>
+            <li><a href="mailto:malchevskiii@gmail.com">Mail</a>
             </li>
-            <li>
-                <a href="https://wa.me/1139382306">#</a>
+            <li><a href="https://wa.me/1139382306">#</a>
             </li>
-            <li>
-                <a href="https://www.linkedin.com/in/martinamalchevski/">LinkedIn</a>
+            <li><a href="https://www.linkedin.com/in/martinamalchevski/">LinkedIn</a>
             </li>
         </ul>
     </footer>

@@ -1,163 +1,284 @@
 @charset "utf-8";
-/* CSS Document */
 
-/* -----------FONT FACE--------------- */
 
 @font-face {
     font-family: "Helvetica Regular";
-    src: url(fonts/Helvetica.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+    src: url(fonts/Helvetica.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Helvetica Bold";
-    src: url(fonts/Helvetica-Bold.ttf) format(truetype);
+    src: url(fonts/Helvetica-Bold.ttf) format("truetype");
     font-weight: bold;
-    font-style: normal;
+}
+
+/* ---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(img/Normal.cur), auto;
 }
 
 body {
     background-color: rgb(245, 253, 252);
+    font-family: "Helvetica Regular", sans-serif;
+    color: #1e1e1e;
+    line-height: 1.5;
 }
 
-*{
-    text-align: center;
+ul {
     list-style: none;
 }
 
-/* ------------HEADER----------------- */
+/* -----------HEADER----------- */
 
-
-h1 {
-    font-family: "Helvetica Bold";
-    font-size: 84px;
-    color: #1E1E1E;
-    text-align: center;
-    line-height: 15px;
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
 }
 
-header a {
+.header-logo {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
     font-family: "Helvetica Bold";
-    font-size: 20px;
-    font-weight: bold;
-    color: #1E1E1E;
+    font-size: 22px;
+    color: #1e1e1e;
     text-decoration: none;
 }
 
-header a span {
-    color: #E0508F;
+nav a:hover {
+    color: #e0508f;
 }
 
-header a:hover {
-    color: #E0508F;
+/* ---------------------- */
+
+h1,
+h2 {
+    font-family: "Helvetica Bold";
+    text-align: center;
 }
 
-header a span :hover {
-    color: #1E1E1E;
+h1 {
+    font-size: 84px;
+}
+
+h2 {
+    font-size: 84px;
 }
 
 p {
-    font-family: "Helvetica Regular";
     font-size: 16px;
-    color: #1E1E1E;
 }
 
-/* ----------------MAIN------------------- */
+/* ------------------ */
+
+.seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
 
 /* SOBRE MI */
+.sobre-mi {
+    display: flex;
+    gap: 29px;
+    justify-content: center;
+}
 
-#info-personal span {
+.sobre-mi-contenedor {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Columna izquierda*/
+.columna-izquierda {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+/* Columna derecha---*/
+.columna-derecha {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 2.4rem;
+
+}
+
+
+.texto h1 {
     font-family: "Helvetica Bold";
-    font-weight: bold;
-    font-size: 16px;
-    color: #1E1E1E;
+    text-align: left;
 }
 
-#info-personal {
-    font-family: "Helvetica Regular";
+.texto p {
     font-size: 16px;
-    color: #1E1E1E;
+    line-height: 1.5;
 }
 
-/* EXPERIENCIA */
+/* Info personal columna 3-2 */
+.info-personal ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px 95px;
+    padding: 0;
+    justify-items: start;
+}
 
-#experiencia span {
+.info-personal li {
+    font-size: 16px;
+}
+
+.info-personal span {
     font-family: "Helvetica Bold";
-    font-weight: bold;
-    font-size: 16px;
-    color: #1E1E1E;
 }
 
-#experiencia {
-    font-family: "Helvetica Regular";
-    font-size: 16px;
-    color: #1E1E1E;
+
+/*---------DOBLE COLUMNA------*/
+.seccion-dos-columnas {
+    display: flex;
+    justify-content: center;
+    max-width: 950px;
+    margin: 30px auto 55px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
-/* EDUCACION */
 
-#educacion span {
+.columna-experiencia {
+    text-align: left;
+}
+
+.columna-educacion {
+    text-align: right;
+}
+
+
+.seccion-dos-columnas .listado {
+    list-style: none;
+    padding: 0;
+}
+
+.seccion-dos-columnas .listado li {
+    margin-bottom: 15px;
+}
+
+.seccion-dos-columnas .listado span {
     font-family: "Helvetica Bold";
-    font-weight: bold;
-    font-size: 16px;
-    color: #1E1E1E;
 }
 
-#educacion {
-    font-family: "Helvetica Regular";
-    font-size: 16px;
-    color: #1E1E1E;
-}
 
-/* HABILIDADES */
 
-.habilidades {
-    font-family: "Helvetica Bold";
-    color: rgb(245, 253, 252);
+/* -----------HABILIDADES----------- */
 
-    /* width: 1366px;*/
-    height: 226px;
+#habilidades {
+    height: 277px;
     background-color: #1E1E1E;
+    color: rgb(245, 253, 252);
+    text-align: center;
 }
 
 .habilidades h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.habilidades li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: "Helvetica Bold";
+    font-size: 20px;
+}
+
+/* -----------GALERIA----------- */
+
+.galeria {
+    padding-bottom: 45px;
+    display: flex;
+    padding-top: 73px;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.img-galeria {
+    display: flex;
+    gap: 39px; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+/* -----------FOOTER----------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.site-footer {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.site-footer h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #e0508f;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer-links a {
+    font-family: "Helvetica Bold";
+    font-size: 22px;
     color: rgb(245, 253, 252);
-}
-
-.habilidades ul {
-    font-family: "Helvetica Bold";
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* GALERIA */
-
-
-/* -------------------FOOTER----------------- */
-
-footer {
-    font-family: "Helvetica Bold";
-    font-weight: bold;
-}
-
-footer a {
-    font-size: 20px;
-    color: #1E1E1E;
     text-decoration: none;
 }
 
-footer a:hover {
-    color: rgb(245, 253, 252);
-}
+.footer-links a:hover {
+    color: #1e1e1e;
 
-footer h1 {
-    font-size: 84px;
-    color: #1E1E1E;
-}
-
-.footer {
-/*    width: 1366px; */
-    height: 125px;
-    background-color: #E0508F;
 }
